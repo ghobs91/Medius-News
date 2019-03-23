@@ -4,7 +4,13 @@ import axios from 'axios';
 import './App.css';
 import NewsGrid from './components/NewsGrid';
 import NavBar from './components/NavBar';
-// import { Route, Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 class App extends Component {
   constructor(props) {
@@ -32,10 +38,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <AppContainer>
         <NavBar/>
         <NewsGrid newscards={this.state.newscards} />
-      </div>
+      </AppContainer>
     );
   }
 }

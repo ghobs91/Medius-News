@@ -16,7 +16,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f31036fe7b5e4137bb084f9428a35784')
+      .get('https://newsapi.org/v2/top-headlines?sources=reuters,associated-press&apiKey=f31036fe7b5e4137bb084f9428a35784')
       .then(response => {
         console.log ("this is the response:", response.data.articles);
 

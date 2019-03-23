@@ -4,10 +4,9 @@ const NewsCard = props => {
   return (
     <div className="NewsCard">
       <a href = {props.url}>
+        <img src= {props.image} alt= ""></img>
         <h3>{props.title}</h3>
-          {/* <div>{props.image}</div> */}
-          <img src= {props.image} alt= ""></img>
-          <p>{props.subtitle}</p>
+        <p>{props.subtitle}</p>
       </a>    
     </div>
   );

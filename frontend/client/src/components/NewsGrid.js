@@ -6,6 +6,7 @@ class NewsGrid extends Component {
     return (
       <div className="news-grid">
         <div>Here be the NewsCards:</div>
+        <br></br>
         <NewsCard></NewsCard>
       </div>
     );

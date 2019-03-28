@@ -2,7 +2,19 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Card = styled.div`
-  width: 28%;
+
+  @media (max-width: 600px) {
+    width: 70%;
+  }
+
+  @media (min-width: 708px) {
+    width: 44%;
+  }
+
+  @media (min-width: 950px) {
+    width: 29%;
+  }
+
   display: flex;
   flex-direction: column;
   border: 1px lightgray solid;
@@ -11,7 +23,8 @@ const Card = styled.div`
 `;
 
 const CardText = styled.div`
-  padding: 1rem;
+  padding: .7rem;
+
   font-family: 'Open Sans', sans-serif;
 `
 
@@ -40,7 +53,7 @@ const NewsCard = props => {
 
 NewsCard.defaultProps = {
   title: '',
-  image: '',
+  image: 'https://i.imgur.com/JGeDBAm.png',
   subtitle: '',
   url: ''
 };

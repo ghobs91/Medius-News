@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NewsCard from './NewsCard';
 import styled from 'styled-components'
+import './../App.css';
 
 const GridContainer = styled.section`
   height: 95%;
@@ -8,10 +9,12 @@ const GridContainer = styled.section`
   font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: space-between;
+  margin-top: 5rem;
 `;
 
 const Grid = styled.div`
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
 
@@ -21,7 +24,7 @@ class NewsGrid extends Component {
   render() {
     return (
       <GridContainer>
-        <ul>
+        <ul className = "centered-ul">
           <Grid>
             {this.props.newscards.map(newscard => {
               return (

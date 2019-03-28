@@ -38,7 +38,7 @@ class App extends Component {
     const topNewsRequest = await axios.get('https://newsapi.org/v2/top-headlines?sources=reuters,associated-press,abc-news,cbs-news,nbc-news,usa-today&apiKey=f31036fe7b5e4137bb084f9428a35784');
     const bizNewsRequest = await axios.get('https://newsapi.org/v2/top-headlines?sources=cnbc&apiKey=f31036fe7b5e4137bb084f9428a35784');
     const sportsNewsRequest = await axios.get('https://newsapi.org/v2/top-headlines?sources=bleacher-report,espn&apiKey=f31036fe7b5e4137bb084f9428a35784');
-    const healthNewsRequest = await axios.get('https://newsapi.org/v2/top-headlines?category=medical-news-today&apiKey=f31036fe7b5e4137bb084f9428a35784');
+    const healthNewsRequest = await axios.get('https://newsapi.org/v2/top-headlines?sources=medical-news-today&apiKey=f31036fe7b5e4137bb084f9428a35784');
 
     this.setState({
       topNewsCards: topNewsRequest.data.articles,

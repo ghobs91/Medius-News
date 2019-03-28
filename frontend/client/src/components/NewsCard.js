@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Card = styled.div`
 
   @media (max-width: 600px) {
-    width: 70%;
+    width: 100%;
   }
 
   @media (min-width: 708px) {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 const Navigation = styled.section`
-  height: 7%;
+  height: 9%;
   width: 100%;
   background: #5876fc;
   display: flex;

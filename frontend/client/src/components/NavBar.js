@@ -18,6 +18,10 @@ const NavText = styled.div`
   padding: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `
 
 class NavBar extends Component {
@@ -28,7 +32,7 @@ class NavBar extends Component {
           <h2>Medius News</h2>
         </NavText>
         <NavText>
-          <p>Why I built This</p>
+          <p><a href="https://medium.com/@andrewghobrial/why-medius-news-neutrality-e757fa9685cc" alt="">Why I built This</a></p>
         </NavText>
       </Navigation>
     );

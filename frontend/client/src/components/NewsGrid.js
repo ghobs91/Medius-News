@@ -41,7 +41,9 @@ const SectionHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px lightgray solid;
+  @media (max-width: 708px){
+    border: 1px lightgray solid;
+  }
 `
 
 const SectionHeaderElement = styled.div`

@@ -34,6 +34,7 @@ const ImageContainer = styled.img`
 
 const SubTitleContainer = styled.div`
   font-size: 12px;
+  color: #636363;
 `
 const NewsCard = props => {
   return (
